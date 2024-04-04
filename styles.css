@@ -1,0 +1,61 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #ffffff;
+}
+
+.logo {
+    font-size: 1.5em;
+    color: #0085A1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.theme-switcher {
+    cursor: pointer;
+}
+
+.intro {
+    background: #0085A1;
+    text-align: center;
+    padding: 2em;
+    color: white;
+}
+
+.greeting-icon img {
+    height: 50px;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0.5em 0;
+}
+
+.download-cv {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Responsive styles and other sections go here */
