@@ -1,0 +1,209 @@
+/* Reset and base styles */
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('background.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-bottom: 60px;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensuring the header stays on top */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header nav ul li a.active {
+    font-weight: bold;
+}
+
+.home-page .intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px; /* Adjust this value to match the height of your header */
+    padding: 10px;
+}
+
+.home-page .text-container {
+    flex: 1;
+    text-align: center;
+    max-width: 400px;
+}
+
+.home-page .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.home-page .profile-pic {
+    width: 80%;
+    max-width: 550px; /* Adjust to maintain a reasonable size on larger screens */
+    height: auto;
+    margin-top: 20px;
+}
+
+.home-page h1 {
+    color: white;
+    font-size: 4.5em; /* Adjusted to be more realistic for common screen sizes */
+    margin-bottom: 0.3em;
+}
+
+.home-page h2 {
+    color: white;
+    font-size: 2.5em; /* Adjusted for common screen sizes */
+    margin-bottom: 0.5em;
+}
+
+.home-page .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.home-page .btn:hover {
+    background: #0056b3;
+}
+/* Centering the card container */
+.about-page .about-section {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: calc(100vh - 80px); /* Full height minus the header; adjust as needed */
+    padding: 20px;
+}
+
+.about-page .card-container {
+    width: 100%; /* Full width to center the card */
+    max-width: 800px; /* Maximum width of the card */
+}
+
+.about-page .card {
+    background-color: #fff; /* Light background for the card */
+    color: #333; /* Darker text color for readability */
+    margin: 20px auto; /* Top and bottom margin with auto to center horizontally */
+    padding: 40px; /* Padding inside the card */
+    border-radius: 8px; /* Optional rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box-shadow for a subtle depth effect */
+    text-align: left; /* Align text to the left */
+}
+.about-page h1 {
+    margin-top: 0;
+    font-size: 2.5em; /* Adjust font size as needed */
+}
+
+.about-page p {
+    font-size: 1em; /* Adjust font size as needed */
+    text-align: justify; /* Justify paragraph for better readability */
+    margin-top: 1em; /* Add some space between the title and paragraph */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.8em;
+    position: fixed; /* Changed from relative to fixed */
+    bottom: 0; /* Aligns the footer to the bottom of the page */
+    width: 100%;
+    z-index: 100; /* Ensures footer is above other content */
+}
+footer-content {
+    margin: auto;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .home-page .intro-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-page .text-container {
+        order: 2;
+    }
+
+    .home-page .image-container,
+    .home-page .text-container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .home-page .profile-pic {
+        max-width: 300px;
+        margin: 20px auto;
+    }
+
+    .home-page header {
+        position: relative;
+    }
+
+    .home-page header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .home-page header nav ul li {
+        margin: 10px 0;
+    }
+
+    .home-page header nav ul li a {
+        padding: 10px 15px;
+    }
+
+    .home-page .btn {
+        width: auto;
+        margin: 20px auto;
+
+    }
+    .about-page .about-section {
+        height: auto; /* Height auto for smaller devices */
+        padding: 20px;
+    }
+    
+    .about-page .card {
+        padding: 20px; /* Smaller padding for smaller devices */
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
+
+
